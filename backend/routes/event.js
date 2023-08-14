@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 const mongoose = require("mongoose")
 const proposalSchema = require('../schemas/proposal.js');
-const requireLogin=require("../middleware/requireLogin.js");
+const requireLogin= require('../middleware/reqiureLogin.js')
 const Proposal=mongoose.model("PROPOSAL");
 
 
