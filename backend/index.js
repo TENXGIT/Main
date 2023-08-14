@@ -30,9 +30,9 @@ require("./schemas/vendor")
 require("./schemas/proposal")
 
 app.use(express.json())
-app.use(require("./routes/users"))
-app.use(require("./routes/vendors"))
-app.use(require("./routes/event"))
+app.use('/users',require("./routes/users"))
+app.use('/vendors',require("./routes/vendors"))
+app.use('/event',require("./routes/event"))
 
 app.listen(PORT, ()=>{
     console.log("server starting on port "+ PORT)
